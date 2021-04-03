@@ -1,7 +1,23 @@
-import React from 'react'
-import banner from '../assets//banner.jpg'
+import React, { useEffect, useState } from 'react'
+import axios from '../api/axios'
+import requests from '../api/Request'
+import { imgOriginal } from "../config/config";
 
 const Banner = () => {
+    const [movie, setMovie] = useState([])
+
+    useEffect(() => {
+        const fetchData = async() => {
+            const request = await axios.get(requests.fetchNetflixOriginals)
+            setMovie(request.data.results[
+                Math.floor(Math.random() * request.data.results.length - 1)
+            ])
+        } 
+        fetchData()
+    }, [])
+
+    console.log(movie);
+
     const truncate = (string, n) => {
         return string?.length > n ? string.substr(0, n - 1) + '...' : string
     }
@@ -10,7 +26,7 @@ const Banner = () => {
         <header 
             className="banner" 
             style={{
-                backgroundImage: `url(${banner})`,
+                backgroundImage: `url(${imgOriginal}/${movie?.backdrop_path})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
                 
@@ -18,16 +34,14 @@ const Banner = () => {
         >
             <div className="banner__contents">
                 <h1 className="banner__title">
-                    Movie Name
+                    {movie?.title || movie?.name || movie?.original_name}
                 </h1>
                 <div className="banner__buttons">
                     <button className="banner__button">Play</button>
                     <button className="banner__button">My List</button>
                 </div>
                 <h1 className="banner__description">
-                    {truncate(`test description test description test description test description test description test description test description test description test description test description 
-                    test description 
-                    test description test description test description test description test description test description test description `, 150)}
+                    {truncate(movie?.overview, 150)}
                 </h1>
             </div>
 
