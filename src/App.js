@@ -1,10 +1,11 @@
 import React from 'react'
-import './App.css';
+import HomeScreen from './pages/HomeScreen';
+import './styles/app.scss';
 
 const App = () => {
     return (
         <div className="app">
-            <h1>Netflix</h1>
+            <HomeScreen />
         </div>
     )
 }
