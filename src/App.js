@@ -11,7 +11,6 @@ import LoginScreen from './pages/LoginScreen';
 import './styles/app.scss';
 
 
-
 const App = () => {
     const user = null
     return (

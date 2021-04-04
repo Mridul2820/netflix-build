@@ -2,7 +2,7 @@ import React from 'react'
 
 const SignInScreen = () => {
     return (
-        <div>
+        <div className="signInScreen">
             <h1>Sign in</h1>
         </div>
     )

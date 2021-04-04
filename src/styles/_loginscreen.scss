@@ -1,6 +1,10 @@
 .loginScreen {
-    position: relative;
-    height: 100%;
+    height: 748.4px;
+
+    .loginScreen__background {
+        position: relative;
+        min-height: 100vh;
+    }
 
     .loginScreen__logo {
         position: fixed;
@@ -26,7 +30,7 @@
 
     .loginScreen__gradient {
         width: 100%;
-        height: 100vh;
+        height: 748.4px;
         z-index: 1;
         background: rgba(0, 0, 0, .4);
         background-image: linear-gradient(
@@ -36,37 +40,39 @@
             rgba(0, 0, 0, .8) 100%
         );
     }
+}
 
-    .loginScreen__body {
-        color: #fff;
-        padding: 20px;
-        position: absolute;
-        width: 100%;
-        top: 30%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        z-index: 1;
+.storyMain {
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    // width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
 
-        h1 {
-            margin-bottom: 20px;
-            font-size: 4rem;
-        }
+    
+    
+    h1 {
+        margin-bottom: 20px;
+        font-size: 4rem;
+    }
 
-        h2 {
-            font-size: 1.625rem;
-            font-weight: 400;
-            margin-bottom: 30px;
-        }
+    h2 {
+        font-size: 1.625rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
 
-        h3 {
-            font-size: 1.3rem;
-            font-weight: 400;
-        }
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 400;
     }
 }
 
-.loginScreen__input {
+.storyMain__input {
     margin: 20px;
     
     form {
@@ -86,7 +92,7 @@
             margin: 0;
         }
 
-        .loginScreen__getStarted {
+        .storyMain__getStarted {
             height: 100%;
             padding: 16px 20px;
             color: #fff;

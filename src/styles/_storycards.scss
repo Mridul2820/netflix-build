@@ -1,0 +1,150 @@
+.storyCards {
+    background-color: #000;
+}
+
+.storyCard {
+    color: #fff;
+    border-bottom: 8px solid #222;
+    padding: 70px 45px;
+}
+
+.storyCard__tv {
+    border-top: 8px solid #222;
+}
+
+.storyCard__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.storyCard__content {
+    width: 52%;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+
+    h1 {
+        font-size: 3.125rem;
+        line-height: 1.1;
+        margin-bottom: .5rem;
+    }
+}
+
+.storyCard__assets{
+    width: 48%;
+    height: 100%;
+    position: relative;
+}
+
+.storyCard__img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.storyCard__video {
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+
+    video {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+}
+
+.storyCard__tv {
+    .storyCard__assets{
+        margin: -2% -5% -5% 0;
+        overflow: hidden;
+
+        .storyCard__video {
+            max-width: 73%;
+            max-height: 54%;
+            position: absolute;
+            top: 46%;
+            left: 50%;
+        }        
+    }
+}
+
+.storyCard__mobile {
+    .storyCard__content {
+        padding: 0  !important;
+    }
+
+    .storyCard__assets {
+        position: relative;
+        margin: 0 0 0 -5%;
+        min-height: 100px;
+    }
+
+    .storyCard__animation {
+        position: absolute;
+        left: 50%;
+        bottom: 8%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        background: #000;
+        display: flex;
+        align-items: center;
+        width: 60%;
+        min-width: 15em;
+        padding: .25em .65em;
+        border: 2px solid rgba(255,255,255,.25);
+        box-shadow: 0 0 2em 0 #000;
+        border-radius: .75em;
+        z-index: 3;
+
+        &:after {
+            width: 3em;
+            height: 3em;
+            outline: 2px solid #000;
+            outline-offset: -2px;
+            display: block;
+            background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+            background-size: 100%;
+            content: '';
+        }
+
+        &-image {
+            margin: 0 1em 0 0;
+
+            img {
+                max-width: 100%;
+                height: 5em;
+            }
+        }
+
+        &-text {
+            flex-grow: 1;
+            margin: .3em 0;
+
+            .text-2 {
+                color: #0071eb;
+            }
+        }
+    }
+}
+
+.storyCard__anywhere {
+    .storyCard__assets{
+        margin: -2% -5% -5% 0;
+
+        .storyCard__video {
+            max-width: 63%;
+            max-height: 47%;
+            position: absolute;
+            top: 34%;
+            left: 50%;
+        }        
+    }
+}
