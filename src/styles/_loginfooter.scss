@@ -1,0 +1,38 @@
+.footerlogin {
+    background-color: #000;
+}
+
+.footer, .footer a {
+    color: #999;
+    font-size: .9rem;
+}
+
+.footer {
+    max-width: 75%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 1.5rem 0;
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    li {
+        line-height: 1.9;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+
+    // @media only screen and (max-width: $bp-large){
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+}
