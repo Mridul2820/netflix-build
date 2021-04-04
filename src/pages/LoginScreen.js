@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SignInScreen from './SignInScreen';
+import { BsChevronRight } from "react-icons/bs";
 
 import logo from '../assets/netflix-full.png'
 import mainBanner from '../assets/banner.jpg'
@@ -49,11 +50,13 @@ const LoginScreen = () => {
                                 maxLength="50"
                                 minLength="5"
                             />
+                            
                             <button
                                 onClick={() => setSignIn(true)} 
                                 className="loginScreen__getStarted"
                             >
-                                Get Started
+                                <span className="getStarted-text">Get Started</span>
+                                <span className="getStarted-right-arrow"><BsChevronRight/></span>
                             </button>
                         </form>
                     </div>
