@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import SignInScreen from './SignInScreen';
+import SignUpScreen from './SignUpScreen';
 
 import logo from '../assets/netflix-full.png'
 import mainBanner from '../assets/banner.jpg'
+
 import MainScreen from '../components/LoginScreen/StoryMain';
 import StoryCards from '../components/LoginScreen/StoryCards';
 import LoginFooter from '../components/LoginScreen/LoginFooter';
@@ -35,7 +36,7 @@ const LoginScreen = () => {
                 <div className="loginScreen__gradient" />
             </div>
             {signIn ? (
-                <SignInScreen />
+                <SignUpScreen />
             ) : (
                 <div >
                     <MainScreen setSignIn={setSignIn}/>

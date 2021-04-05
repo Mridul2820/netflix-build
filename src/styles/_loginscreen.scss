@@ -53,8 +53,6 @@
     text-align: center;
     z-index: 1;
 
-    
-    
     h1 {
         margin-bottom: 20px;
         font-size: 4rem;
@@ -77,13 +75,14 @@
     
     form {
         height: 65px;
+        // width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
 
         input {
             height: 100%;
-            width: 40%;
+            width: 65%;
             max-width: 600px;
             outline: none;
             border: none;
