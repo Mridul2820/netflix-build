@@ -1,11 +1,62 @@
-.signInScreen{
+.signUpScreen{
+    width: 450px;
     color: #fff;
-    padding: 20px;
+    padding: 70px;
+    background: rgba(0, 0, 0, .85);
     position: absolute;
-    // width: 100%;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     z-index: 1;
+    border-radius: 5px;
+
+    form {
+        display: grid;
+        flex-direction: column;
+        width: 100%;
+
+        h1 {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        input {
+            margin-bottom: 14px;
+            height: 50px;
+            outline-width: 0;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 15px;
+        }
+
+        button {
+            padding: 16px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            border-radius: 5px;
+            background-color: $netflix-red;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            margin-top: 15px;
+        }
+
+        h4 {
+            text-align: left;
+            margin-top: 30px;
+            
+            .signUpScreen__gray {
+                color: gray;
+            }
+
+            .signUpScreen__link {
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
