@@ -10,10 +10,30 @@
     padding-top: 140px;
     height: 190px;
 
+    @media only screen and (max-width: $bp-small-2){
+        margin-left: 20px;
+    }
+
+    @media only screen and (max-width: $bp-small-3){
+        margin-left: 15px;
+    }
+
     .banner__title {
         font-size: 3rem;
         font-weight: 700;
         padding-bottom: 0.3rem;
+
+        @media only screen and (max-width: $bp-medium-3){
+            font-size: 2.6rem;
+        }
+
+        @media only screen and (max-width: $bp-small-1){
+            font-size: 2.2rem;
+        }
+
+        @media only screen and (max-width: $bp-small-1){
+            font-size: 2rem;
+        }
     }
 
     .banner__button {
@@ -41,6 +61,10 @@
         padding-top: 1rem;
         font-size: .8rem;
         height: 80px;
+
+        @media only screen and (max-width: $bp-small-1){
+            width: 19rem;
+        }
     }
 }
 

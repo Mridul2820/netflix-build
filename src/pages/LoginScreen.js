@@ -7,6 +7,7 @@ import mainBanner from '../assets/banner.jpg'
 import StoryCards from '../components/LoginScreen/StoryCards';
 import LoginFooter from '../components/LoginScreen/LoginFooter';
 import StoryMain from '../components/LoginScreen/StoryMain';
+import FAQ from '../components/LoginScreen/FAQ';
 
 const LoginScreen = () => {
     const [signIn, setSignIn] = useState(false)
@@ -41,6 +42,7 @@ const LoginScreen = () => {
                 <div >
                     <StoryMain setSignIn={setSignIn}/>
                     <StoryCards />
+                    <FAQ />
                     <LoginFooter />
                 </div>
             )}

@@ -139,6 +139,12 @@
 }
 
 .storyCard__mobile {
+    .storyCard__container {
+        @media only screen and (max-width: $bp-large-3){
+            flex-direction: column-reverse !important;
+        }
+    }
+
     .storyCard__content {
         padding: 0  !important;
     }
