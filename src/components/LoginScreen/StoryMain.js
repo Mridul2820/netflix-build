@@ -1,8 +1,10 @@
 import React from 'react'
 import { BsChevronRight } from "react-icons/bs";
 
-const MainScreen = ({ setSignIn }) => {
+const StoryMain = ({ setSignIn }) => {
     return (
+        <div className="storyMain__container">
+
         <div className="storyMain">
             <h1>Unlimited movies, TV <br/> shows and more.</h1>
             <h2>Watch anywhere. Cancel anytime.</h2>
@@ -26,7 +28,8 @@ const MainScreen = ({ setSignIn }) => {
                 </form>
             </div>
         </div>
+        </div>
     )
 }
 
-export default MainScreen
+export default StoryMain

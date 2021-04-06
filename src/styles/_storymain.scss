@@ -1,0 +1,178 @@
+.storyMain__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.storyMain {
+    color: #fff;
+    padding: 20px;
+
+    @media only screen and (max-width: $bp-medium-1){
+        padding: 50px 20px 20px 20px;
+    }
+
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 4rem;
+
+        @media only screen and (max-width: $bp-large-2){
+            font-size: 3.5rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-1){
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-3){
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small-1){
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small-1){
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small-3){
+            font-size: 1.6rem;
+        }
+    }
+
+    h2 {
+        font-size: 1.625rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        @media only screen and (max-width: $bp-medium-3){
+            font-size: 1.2rem;
+        }
+
+        @media only screen and (max-width: $bp-small-1){
+            font-size: 1.1rem;
+        }
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 400;
+
+        @media only screen and (max-width: $bp-medium-3){
+            font-size: 1rem;
+        }
+
+        @media only screen and (max-width: $bp-small-1){
+            font-size: .9rem;
+        }
+    }
+}
+
+.storyMain__input {
+    margin: 20px;
+
+    @media only screen and (max-width: $bp-small-1){
+        margin: 20px 0 0;
+    }
+    
+    form {
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-small-1){
+            height: 50px;
+        }
+
+        input {
+            height: 100%;
+            width: 65%;
+            max-width: 600px;
+            outline: none;
+            border: none;
+            padding: 16px;
+            font: inherit;
+            margin: 0;
+
+            @media only screen and (max-width: $bp-medium-1){
+                width: calc(100% - 197px);
+            }
+
+            @media only screen and (max-width: $bp-medium-3){
+                width: calc(100% - 160px);
+            }
+
+            @media only screen and (max-width: $bp-small-1){
+                width: calc(100% - 130px);
+            }
+
+            @media only screen and (max-width: $bp-small-3){
+                width: calc(100% - 120px);
+            }
+        }
+
+        .storyMain__getStarted {
+            height: 100%;
+            padding: 16px 20px;
+            width: 197px;
+            color: #fff;
+            background-color: $netflix-red;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            @media only screen and (max-width: $bp-medium-3){
+                padding: 16px 16px;
+                width: 160px;
+            }
+
+            @media only screen and (max-width: $bp-small-1){
+                padding: 16px 10px;
+                width: 130px;
+            }
+
+            @media only screen and (max-width: $bp-small-3){
+                width: 120px;
+            }
+
+            .getStarted-text {
+                text-align: center;
+                font-size: 25px;
+                font-weight: 500;
+
+                @media only screen and (max-width: $bp-medium-3){
+                    font-size: 20px;
+                }
+
+                @media only screen and (max-width: $bp-small-1){
+                    font-size: 15px;
+                }
+            }
+            
+            .getStarted-right-arrow {
+                margin: 0 0 0 .5em;
+                font-size: 19.2px;
+
+                @media only screen and (max-width: $bp-medium-3){
+                    font-size: 15px;
+                }
+
+                @media only screen and (max-width: $bp-small-1){
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

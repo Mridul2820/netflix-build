@@ -1,5 +1,16 @@
 $netflix-red : #e50914;
 
+// Responsive Breakpoint
+$bp-large-1: 75em;      //1200px
+$bp-large-2: 58em;      //928px
+$bp-large-3: 48em;      //768px
+$bp-medium-1: 45em;     //720px
+$bp-medium-2: 40em;     //640px
+$bp-medium-3: 38em;     //608px
+$bp-small-1: 30em;      //480px
+$bp-small-2: 27em;      //432px
+$bp-small-3: 24em;      //384px
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +28,7 @@ $netflix-red : #e50914;
 @import './banner';
 @import './row';
 @import './loginscreen';
+@import './storymain';
 @import './storycards';
 @import './signupscreen';
 @import './loginfooter';

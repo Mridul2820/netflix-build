@@ -19,6 +19,10 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-large-3){
+        flex-direction: column;
+    }
 }
 
 .storyCard__content {
@@ -26,11 +30,29 @@
     height: 100%;
     padding: 0 3rem 0 0;
     z-index: 3;
+    
+    @media only screen and (max-width: $bp-large-3){
+        width: 80%;
+        padding: 0;
+        margin: 50px;
+        text-align: center;
+    }
 
     h1 {
         font-size: 3.125rem;
         line-height: 1.1;
         margin-bottom: .5rem;
+
+        @media only screen and (max-width: $bp-large-2){
+            font-size: 2.5rem;
+        }
+    }
+
+    h2 {
+        @media only screen and (max-width: $bp-large-2){
+            font-size: 1.4rem;
+            line-height: 2.1rem
+        }
     }
 }
 
@@ -38,6 +60,11 @@
     width: 48%;
     height: 100%;
     position: relative;
+
+    @media only screen and (max-width: $bp-large-3){
+        width: 70%;
+        padding: 0;
+    }
 }
 
 .storyCard__img {

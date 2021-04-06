@@ -4,9 +4,9 @@ import SignUpScreen from './SignUpScreen';
 import logo from '../assets/netflix-full.png'
 import mainBanner from '../assets/banner.jpg'
 
-import MainScreen from '../components/LoginScreen/StoryMain';
 import StoryCards from '../components/LoginScreen/StoryCards';
 import LoginFooter from '../components/LoginScreen/LoginFooter';
+import StoryMain from '../components/LoginScreen/StoryMain';
 
 const LoginScreen = () => {
     const [signIn, setSignIn] = useState(false)
@@ -39,7 +39,7 @@ const LoginScreen = () => {
                 <SignUpScreen />
             ) : (
                 <div >
-                    <MainScreen setSignIn={setSignIn}/>
+                    <StoryMain setSignIn={setSignIn}/>
                     <StoryCards />
                     <LoginFooter />
                 </div>
