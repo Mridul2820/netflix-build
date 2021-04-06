@@ -12,6 +12,7 @@ import HomeScreen from './pages/HomeScreen';
 import LoginScreen from './pages/LoginScreen';
 
 import './styles/app.scss';
+import ProfileScreen from './pages/ProfileScreen';
 
 
 const App = () => {
@@ -29,12 +30,11 @@ const App = () => {
             }
             else {
                 // logged out
-                dispatch(logout)
+                dispatch(logout())
             }
         })
         return unsubscribe
-        // eslint-disable-next-line
-    }, [])
+    }, [dispatch])
 
     return (
         <div className="app">
@@ -43,6 +43,9 @@ const App = () => {
                 <LoginScreen />
             ) : (
                 <Switch>
+                    <Route path="/profile">
+                        <ProfileScreen />
+                    </Route>
                     <Route exact path="/">
                         <HomeScreen />
                     </Route>
